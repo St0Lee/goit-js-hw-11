@@ -22,7 +22,7 @@ async function handleSubmit(event){
 
   form.style.backgroundColor = getRandomHexColor();
   const formData= new FormData(event.currentTarget);
-  searchIMG = formData.get("searchQuery").trim(); //gets data from the proper name, and formats the entered value;
+  searchIMG = formData.get("searchQuery").trim(); //gets data from the proper name, and formats the entered value1;
   page = 1;
   if (searchIMG === ""){
     return Notiflix.Notify.failure("The search bar cannot be empty.");
